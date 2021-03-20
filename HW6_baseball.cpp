@@ -10,7 +10,7 @@ int out = 0;       //當局出局數
 int out_sum = 0;   //累積出局數
 int base[4] = {0}; //跑壘狀態，0壘上無人、1壘上有人，陣列索引分別對應，0:本壘, 1:一壘, 2:二壘, 3:三壘
 
-getNum (string point) {
+int getNum (string point) {
         if (point == "1B")
             return 1;
         else if (point == "2B")
@@ -32,8 +32,8 @@ getNum (string point) {
  	
  	for(int i=0; i<SIZE; i++)
  	{
- 		cout << "times: " ;
- 		cin >> a[i];    //value between 1~5
+ 		//cout << "times: " ;
+ 		cin >> a[i] ;    //value between 1~5
  		for(int j=0; j<a[i]; j++) //j<a[i], means that give each player thier hit result(ex: 1B, 2B, FO, SO...etc)
  		{
  			cin >> temp; 
